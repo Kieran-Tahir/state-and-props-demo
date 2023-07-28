@@ -3,8 +3,7 @@ import Persons from "./Persons";
 import Counter from "./Counter";
 
 function App() {
-
-  const count = 0
+  const count = 0;
 
   return (
     <>
@@ -17,7 +16,7 @@ function App() {
       <p>Hey! {data[4].name}</p> */}
       </div>
       <div className="counter">
-        <Counter count={count}/>
+        <Counter />
       </div>
     </>
   );

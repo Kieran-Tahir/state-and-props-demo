@@ -1,20 +1,26 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 function Counter(props) {
-    const [count, setCount] = useState(5)
+  const [count, setCount] = useState(5);
+
+  function minus() {
+    setCount(count - 1)
+  }
+
+  function add() {
+    setCount(count + 1)
+  }
 
   return (
     <>
-    <div className="counter-box">
-      <p>How many people are in class?</p>
-      <div className='row'>
-        <button> - </button>
-        <p className="count-value"> Props.count is: {props.count} </p>
-        <p className="count-value"> useState count is: {count} </p>
-        <button> + </button>
+      <div className="counter-box">
+        <p>How many people are in class?</p>
+        <div className="row">
+          <button onClick={minus}> - </button>
+          <p className="count-value"> {count} </p>
+          <button onClick={add}> + </button>
+        </div>
       </div>
-
-    </div>
     </>
   );
 }
