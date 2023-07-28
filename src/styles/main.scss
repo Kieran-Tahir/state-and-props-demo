@@ -1,13 +1,46 @@
 body {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+  display: flex;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 .App {
+  display: flex;
+  flex-direction: row;
   text-align: center;
+}
+
+.person {
+  border: 2px solid;
+  width: 200px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  color: purple;
+}
+
+.counter-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.count-value {
+  margin: 20px;
 }
